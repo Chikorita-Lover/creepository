@@ -1,5 +1,6 @@
 package com.sidden.creepository.registry;
 
+import com.sidden.creepository.block.PlantPotBock;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
@@ -16,7 +17,10 @@ public class CreepositoryBlocks {
 
    public static final DeferredBlock<Block> CHOCOLATE_BLOCK = registerBlock("chocolate_block",
           () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.PACKED_MUD)));
-    
+
+
+    public static final DeferredBlock<Block> PLANT_POT = registerBlock("plant_pot",
+            ()-> new PlantPotBock(BlockBehaviour.Properties.ofFullCopy(Blocks.DECORATED_POT)));
 
     private static Block stair(DeferredBlock<Block> baseBlock) {
         return new StairBlock(baseBlock.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(baseBlock.get()));
