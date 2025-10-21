@@ -1,10 +1,7 @@
 package com.sidden.creepository;
 
 import com.mojang.logging.LogUtils;
-import com.sidden.creepository.registry.CreepositoryBlocks;
-import com.sidden.creepository.registry.CreepositoryCreativeTabs;
-import com.sidden.creepository.registry.CreepositoryEntities;
-import com.sidden.creepository.registry.CreepositoryItems;
+import com.sidden.creepository.registry.*;
 import net.minecraft.world.level.biome.Biomes;
 import org.slf4j.Logger;
 
@@ -36,6 +33,7 @@ public class Creepository
 
         CreepositoryItems.init(modEventBus);
         CreepositoryBlocks.init(modEventBus);
+        CreepositoryEffects.init(modEventBus);
         CreepositoryEntities.init(modEventBus);
         CreepositoryCreativeTabs.init(modEventBus);
 
