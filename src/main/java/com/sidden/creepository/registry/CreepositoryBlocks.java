@@ -18,7 +18,6 @@ public class CreepositoryBlocks {
    public static final DeferredBlock<Block> CHOCOLATE_BLOCK = registerBlock("chocolate_block",
           () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.PACKED_MUD)));
 
-
     public static final DeferredBlock<Block> PLANT_POT = registerBlock("plant_pot",
             ()-> new PlantPotBock(BlockBehaviour.Properties.ofFullCopy(Blocks.DECORATED_POT)));
 

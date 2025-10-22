@@ -22,6 +22,8 @@ public class CreepositoryCreativeTabs {
                         output.accept(CreepositoryBlocks.PLANT_POT);
                         output.accept(CreepositoryBlocks.CHOCOLATE_BLOCK);
                         output.accept(CreepositoryItems.CHOCOLATE);
+                        output.accept(CreepositoryItems.CHOCOLATE_EGG);
+                        output.accept(CreepositoryItems.CHOCKEN_SPAWN_EGG);
 
                     }).build());
 

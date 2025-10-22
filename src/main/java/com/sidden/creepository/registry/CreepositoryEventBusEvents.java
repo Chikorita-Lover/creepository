@@ -1,0 +1,33 @@
+package com.sidden.creepository.registry;
+
+import com.sidden.creepository.Creepository;
+import com.sidden.creepository.entity.Chocken;
+import com.sidden.creepository.entity.client.model.ChockenModel;
+import net.minecraft.world.entity.SpawnPlacementTypes;
+import net.minecraft.world.entity.animal.Animal;
+import net.minecraft.world.level.levelgen.Heightmap;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.client.event.EntityRenderersEvent;
+import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
+import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
+
+@EventBusSubscriber(modid = Creepository.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
+public class CreepositoryEventBusEvents {
+
+    @SubscribeEvent
+    public  static  void registerLayers(EntityRenderersEvent.RegisterLayerDefinitions event) {
+        event.registerLayerDefinition(ChockenModel.LAYER_LOCATION, ChockenModel::createBodyLayer);
+
+    }
+
+    @SubscribeEvent
+    public  static  void registerAttributes(EntityAttributeCreationEvent event) {
+        event.put(CreepositoryEntities.CHOCKEN.get(), Chocken.createAttributes().build());
+
+    }
+
+    @SubscribeEvent
+    public static void registerSpawnPlacements(RegisterSpawnPlacementsEvent event) {
+    }
+}

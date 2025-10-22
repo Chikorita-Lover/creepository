@@ -1,7 +1,9 @@
 package com.sidden.creepository;
 
 import com.mojang.logging.LogUtils;
+import com.sidden.creepository.entity.client.renderer.ChockenRenderer;
 import com.sidden.creepository.registry.*;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.level.biome.Biomes;
 import org.slf4j.Logger;
 
@@ -68,7 +70,7 @@ public class Creepository
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-
+            EntityRenderers.register(CreepositoryEntities.CHOCKEN.get(), ChockenRenderer::new);
         }
     }
 
