@@ -3,6 +3,7 @@ package com.sidden.creepository;
 import com.mojang.logging.LogUtils;
 import com.sidden.creepository.entity.client.renderer.ChockenRenderer;
 import com.sidden.creepository.registry.*;
+import com.terraformersmc.biolith.api.biome.BiomePlacement;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.level.biome.Biomes;
 import org.slf4j.Logger;
@@ -31,7 +32,6 @@ public class Creepository
         modEventBus.addListener(this::commonSetup);
 
         NeoForge.EVENT_BUS.register(this);
-
 
         CreepositoryItems.init(modEventBus);
         CreepositoryBlocks.init(modEventBus);
