@@ -27,10 +27,7 @@ public class CreepositoryEffects {
                             AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
 
     public static final Holder<MobEffect> SUGAR_CRAVE = MOB_EFFECTS.register("sugar_crave",
-            () -> new SugarCraveEffect(MobEffectCategory.HARMFUL, 0x4e281d)
-                    .addAttributeModifier(Attributes.MOVEMENT_SPEED,
-                            ResourceLocation.fromNamespaceAndPath(Creepository.MOD_ID, "sugar_crave"), -0.2f,
-                            AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
+            () -> new SugarCraveEffect(MobEffectCategory.HARMFUL, 0x4e281d));
 
 
     public static void init(IEventBus eventBus) {
