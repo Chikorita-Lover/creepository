@@ -1,10 +1,13 @@
 package com.sidden.creepository.registry;
 
 import com.sidden.creepository.Creepository;
+import com.sidden.creepository.util.SugarRushTracker;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.event.entity.living.MobEffectEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 
 @EventBusSubscriber(modid = Creepository.MOD_ID, bus = EventBusSubscriber.Bus.GAME)
@@ -19,10 +22,17 @@ public class CreepositoryGameplayEvents {
             if (!stack.is(CreepositoryItemTags.CHOCOLATY)) {
                 event.setCanceled(true);
                 player.displayClientMessage(
-                        net.minecraft.network.chat.Component.literal("You crave only chocolate right now..."),
+                        Component.literal("You crave only chocolate right now..."),
                         true
                 );
             }
+        }
+    }
+
+    @SubscribeEvent
+    public static void onEffectAdded(MobEffectEvent.Added event) {
+        if (event.getEffectInstance().getEffect() == CreepositoryEffects.SUGAR_RUSH && event.getEntity() instanceof Player player) {
+            SugarRushTracker.recordSugarRushUse(player);
         }
     }
 }

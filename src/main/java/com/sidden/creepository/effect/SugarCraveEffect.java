@@ -11,9 +11,6 @@ public class SugarCraveEffect extends MobEffect {
 
     @Override
     public boolean applyEffectTick(LivingEntity livingEntity, int amplifier) {
-
-
-
         return super.applyEffectTick(livingEntity, amplifier);
     }
 
