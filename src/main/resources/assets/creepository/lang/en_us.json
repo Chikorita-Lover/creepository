@@ -6,5 +6,9 @@
   "item.creepository.chocolate_egg": "Chocolate Egg",
   "item.creepository.chocken_spawn_egg": "Chocken Spawn Egg",
 
-  "block.creepository.plant_pot": "Plant Pot"
+  "block.creepository.plant_pot": "Plant Pot",
+
+  "effect.creepository.sugar_rush": "Sugar Rush",
+  "effect.creepository.sugar_crave": "Sugar Crave"
+
 }
