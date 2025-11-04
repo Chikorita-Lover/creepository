@@ -5,6 +5,8 @@
   "item.creepository.chocolate": "Chocolate",
   "item.creepository.chocolate_egg": "Chocolate Egg",
   "item.creepository.chocken_spawn_egg": "Chocken Spawn Egg",
+  "entity.creepository.chocken": "Chocken",
+  "entity.creepository.chocolate_egg": "Chocolate Egg",
 
   "block.creepository.plant_pot": "Plant Pot"
 }

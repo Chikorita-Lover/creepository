@@ -1,6 +1,7 @@
 package com.sidden.creepository.registry;
 
 import com.sidden.creepository.Creepository;
+import com.sidden.creepository.item.ChocolateEggItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.common.DeferredSpawnEggItem;
@@ -14,7 +15,7 @@ public class CreepositoryItems {
             () -> new Item(new Item.Properties().food(CreepositoryFoods.CHOCOLATE)));
 
     public static final DeferredItem<Item> CHOCOLATE_EGG = ITEMS.register("chocolate_egg",
-            () -> new Item(new Item.Properties().food(CreepositoryFoods.CHOCOLATE_EGG)));
+            () -> new ChocolateEggItem(new Item.Properties()));
 
     public static final DeferredItem<Item> CHOCKEN_SPAWN_EGG = ITEMS.register("chocken_spawn_egg",
             () -> new DeferredSpawnEggItem(CreepositoryEntities.CHOCKEN, 0x8f4e30, 0xdca37a,

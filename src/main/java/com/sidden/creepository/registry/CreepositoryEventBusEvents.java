@@ -3,6 +3,7 @@ package com.sidden.creepository.registry;
 import com.sidden.creepository.Creepository;
 import com.sidden.creepository.entity.Chocken;
 import com.sidden.creepository.entity.client.model.ChockenModel;
+import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.SpawnPlacementTypes;
 import net.minecraft.world.entity.animal.Animal;
@@ -28,9 +29,16 @@ public class CreepositoryEventBusEvents {
 
     }
 
+
+    @SubscribeEvent
+    public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
+        event.registerEntityRenderer(CreepositoryEntities.CHOCOLATE_EGG.get(), ThrownItemRenderer::new);
+    }
+
     @SubscribeEvent
     public  static  void registerAttributes(EntityAttributeCreationEvent event) {
         event.put(CreepositoryEntities.CHOCKEN.get(), Chocken.createAttributes().build());
+
 
     }
 
