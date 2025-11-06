@@ -20,6 +20,7 @@ public class CreepositoryCreativeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
 
                         output.accept(CreepositoryBlocks.PLANT_POT);
+                        output.accept(CreepositoryBlocks.KEG);
                         output.accept(CreepositoryBlocks.CHOCOLATE_BLOCK);
                         output.accept(CreepositoryItems.CHOCOLATE);
                         output.accept(CreepositoryItems.CHOCOLATE_EGG);

@@ -8,5 +8,8 @@
   "entity.creepository.chocken": "Chocken",
   "entity.creepository.chocolate_egg": "Chocolate Egg",
 
-  "block.creepository.plant_pot": "Plant Pot"
+  "block.creepository.plant_pot": "Plant Pot",
+
+  "block.creepository.keg": "Keg"
+
 }

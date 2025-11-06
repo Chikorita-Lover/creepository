@@ -1,5 +1,6 @@
 package com.sidden.creepository.registry;
 
+import com.sidden.creepository.block.KegBlock;
 import com.sidden.creepository.block.PlantPotBock;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -17,6 +18,9 @@ public class CreepositoryBlocks {
 
    public static final DeferredBlock<Block> CHOCOLATE_BLOCK = registerBlock("chocolate_block",
           () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.PACKED_MUD)));
+
+    public static final DeferredBlock<Block> KEG = registerBlock("keg",
+            () -> new KegBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BLOCK)));
 
     public static final DeferredBlock<Block> PLANT_POT = registerBlock("plant_pot",
             ()-> new PlantPotBock(BlockBehaviour.Properties.ofFullCopy(Blocks.DECORATED_POT)));

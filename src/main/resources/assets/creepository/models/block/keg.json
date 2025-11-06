@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "creepository:block/keg",
+    "side": "creepository:block/keg_side",
+    "top": "creepository:block/keg_top",
+    "bottom": "creepository:block/keg_bottom",
+    "particle": "creepository:block/keg"
+  }
+}

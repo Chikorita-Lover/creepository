@@ -1,11 +1,11 @@
 package com.sidden.creepository;
 
 import com.mojang.logging.LogUtils;
+import com.sidden.creepository.client.screen.KegScreen;
 import com.sidden.creepository.entity.client.renderer.ChockenRenderer;
 import com.sidden.creepository.registry.*;
-import com.terraformersmc.biolith.api.biome.BiomePlacement;
 import net.minecraft.client.renderer.entity.EntityRenderers;
-import net.minecraft.world.level.biome.Biomes;
+import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import org.slf4j.Logger;
 
 import net.neoforged.api.distmarker.Dist;
@@ -37,6 +37,9 @@ public class Creepository
         CreepositoryBlocks.init(modEventBus);
         CreepositoryEffects.init(modEventBus);
         CreepositoryEntities.init(modEventBus);
+        CreepositoryBlockEntities.init(modEventBus);
+        CreepositoryMenus.init(modEventBus);
+        CreepositoryRecipes.init(modEventBus);
         CreepositoryCreativeTabs.init(modEventBus);
 
         modEventBus.addListener(this::addCreative);
@@ -71,6 +74,10 @@ public class Creepository
         public static void onClientSetup(FMLClientSetupEvent event)
         {
             EntityRenderers.register(CreepositoryEntities.CHOCKEN.get(), ChockenRenderer::new);
+        }
+        @SubscribeEvent
+        public static void registerMenuScreens(RegisterMenuScreensEvent event) {
+            event.register(CreepositoryMenus.KEG.get(), KegScreen::new);
         }
     }
 
