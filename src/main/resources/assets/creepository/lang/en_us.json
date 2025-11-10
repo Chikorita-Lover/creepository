@@ -8,6 +8,10 @@
   "entity.creepository.chocken": "Chocken",
   "entity.creepository.chocolate_egg": "Chocolate Egg",
 
+  "effect.creepository.sugar_rush": "Sugar Rush",
+  "effect.creepository.sugar_crave": "Sugar Crave",
+
+
   "block.creepository.plant_pot": "Plant Pot",
 
   "block.creepository.keg": "Keg"

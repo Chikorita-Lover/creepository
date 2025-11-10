@@ -2,6 +2,7 @@ package com.sidden.creepository.registry;
 
 import com.sidden.creepository.Creepository;
 import com.sidden.creepository.util.SugarRushTracker;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
@@ -19,7 +20,7 @@ public class CreepositoryGameplayEvents {
         ItemStack stack = event.getItemStack();
 
         if (player.hasEffect(CreepositoryEffects.SUGAR_CRAVE)) {
-            if (!stack.is(CreepositoryItemTags.CHOCOLATY)) {
+            if (!stack.is(CreepositoryItemTags.CHOCOLATY) && stack.has(DataComponents.FOOD)) {
                 event.setCanceled(true);
                 player.displayClientMessage(
                         Component.literal("You crave only chocolate right now..."),
