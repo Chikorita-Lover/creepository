@@ -2,6 +2,7 @@ package com.sidden.creepository.registry;
 
 import com.sidden.creepository.block.KegBlock;
 import com.sidden.creepository.block.PlantPotBock;
+import com.sidden.creepository.block.SculptureBlock;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
@@ -23,7 +24,10 @@ public class CreepositoryBlocks {
             () -> new KegBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BLOCK)));
 
     public static final DeferredBlock<Block> PLANT_POT = registerBlock("plant_pot",
-            ()-> new PlantPotBock(BlockBehaviour.Properties.ofFullCopy(Blocks.DECORATED_POT)));
+            ()-> new PlantPotBock(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS)));
+
+    public static final DeferredBlock<Block> SCULPTURE = registerBlock("sculpture",
+            ()-> new SculptureBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
 
     private static Block stair(DeferredBlock<Block> baseBlock) {
         return new StairBlock(baseBlock.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(baseBlock.get()));
