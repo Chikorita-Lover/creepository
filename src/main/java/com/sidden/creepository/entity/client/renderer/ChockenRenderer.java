@@ -16,14 +16,14 @@ import net.neoforged.api.distmarker.OnlyIn;
 
 @OnlyIn(Dist.CLIENT)
 public class ChockenRenderer extends MobRenderer<Chocken, ChockenModel<Chocken>> {
-    private static final ResourceLocation CHICKEN_LOCATION = ResourceLocation.fromNamespaceAndPath(Creepository.MOD_ID,"textures/entity/chocken.png");
+    private static final ResourceLocation CHOCKEN_LOCATION = ResourceLocation.fromNamespaceAndPath(Creepository.MOD_ID,"textures/entity/chocken.png");
 
     public ChockenRenderer(EntityRendererProvider.Context context) {
-        super(context, new ChockenModel(context.bakeLayer(ModelLayers.CHICKEN)), 0.3F);
+        super(context, new ChockenModel(context.bakeLayer(ChockenModel.LAYER_LOCATION)), 0.3F);
     }
 
     public ResourceLocation getTextureLocation(Chocken entity) {
-        return CHICKEN_LOCATION;
+        return CHOCKEN_LOCATION;
     }
 
     protected float getBob(Chocken livingBase, float partialTicks) {
