@@ -1,7 +1,8 @@
-package com.sidden.creepository.registry;
+package com.sidden.creepository.client;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.sidden.creepository.Creepository;
+import com.sidden.creepository.registry.CreepositoryEffects;
 import net.minecraft.client.DeltaTracker;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;

@@ -5,10 +5,16 @@
   "item.creepository.chocolate": "Chocolate",
   "item.creepository.chocolate_egg": "Chocolate Egg",
   "item.creepository.chocken_spawn_egg": "Chocken Spawn Egg",
-
-  "block.creepository.plant_pot": "Plant Pot",
+  "entity.creepository.chocken": "Chocken",
+  "entity.creepository.chocolate_egg": "Chocolate Egg",
 
   "effect.creepository.sugar_rush": "Sugar Rush",
-  "effect.creepository.sugar_crave": "Sugar Crave"
+  "effect.creepository.sugar_crave": "Sugar Crave",
+
+
+  "block.creepository.plant_pot": "Plant Pot",
+  "block.creepository.sculpture": "Sculpture",
+
+  "block.creepository.keg": "Keg"
 
 }

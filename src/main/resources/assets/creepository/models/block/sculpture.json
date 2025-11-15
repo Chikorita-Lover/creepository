@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "creepository:block/sculpture",
+    "side": "creepository:block/sculpture_side",
+    "top": "creepository:block/sculpture_top",
+    "bottom": "creepository:block/sculpture_bottom",
+    "particle": "creepository:block/sculpture_side"
+  }
+}

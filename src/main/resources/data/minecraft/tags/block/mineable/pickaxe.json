@@ -1,8 +1,10 @@
 {
   "replace": false,
   "values": [
-    "flavored:chocolate_block",
-    "creepository:plant_pot"
+    "creepository:chocolate_block",
+    "creepository:plant_pot",
+    "creepository:keg",
+    "creepository:sculpture"
 
   ]
 }

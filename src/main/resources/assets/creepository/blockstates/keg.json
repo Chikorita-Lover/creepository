@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=east,aging=false": {
+      "model": "creepository:block/keg",
+      "y": 90
+    },
+    "facing=east,aging=true": {
+      "model": "creepository:block/keg_aging",
+      "y": 90
+    },
+    "facing=north,aging=false": {
+      "model": "creepository:block/keg"
+    },
+    "facing=north,aging=true": {
+      "model": "creepository:block/keg_aging"
+    },
+    "facing=south,aging=false": {
+      "model": "creepository:block/keg",
+      "y": 180
+    },
+    "facing=south,aging=true": {
+      "model": "creepository:block/keg_aging",
+      "y": 180
+    },
+    "facing=west,aging=false": {
+      "model": "creepository:block/keg",
+      "y": 270
+    },
+    "facing=west,aging=true": {
+      "model": "creepository:block/keg_aging",
+      "y": 270
+    }
+  }
+}
