@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "creepository:block/camera_bottom",
+    "east": "creepository:block/camera_east",
+    "north": "creepository:block/camera",
+    "particle": "creepository:block/camera",
+    "south": "creepository:block/camera_back",
+    "up": "creepository:block/camera_top",
+    "west": "creepository:block/camera_west"
+  }
+}

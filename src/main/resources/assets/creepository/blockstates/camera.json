@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "creepository:block/camera",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "creepository:block/camera"
+    },
+    "facing=south": {
+      "model": "creepository:block/camera",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "creepository:block/camera",
+      "y": 270
+    }
+  }
+}

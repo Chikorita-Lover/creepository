@@ -1,5 +1,6 @@
 package com.sidden.creepository.registry;
 
+import com.sidden.creepository.block.CameraBlock;
 import com.sidden.creepository.block.KegBlock;
 import com.sidden.creepository.block.PlantPotBock;
 import com.sidden.creepository.block.SculptureBlock;
@@ -28,6 +29,9 @@ public class CreepositoryBlocks {
 
     public static final DeferredBlock<Block> SCULPTURE = registerBlock("sculpture",
             ()-> new SculptureBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
+
+    public static final DeferredBlock<Block> CAMERA = registerBlock("camera",
+            ()-> new CameraBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_PLANKS)));
 
     private static Block stair(DeferredBlock<Block> baseBlock) {
         return new StairBlock(baseBlock.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(baseBlock.get()));
