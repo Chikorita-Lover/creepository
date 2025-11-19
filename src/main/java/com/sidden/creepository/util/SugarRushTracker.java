@@ -9,7 +9,7 @@ import java.util.*;
 public class SugarRushTracker {
     private static final Map<UUID, List<Long>> rushTimes = new HashMap<>();
     private static final long ONE_MINUTE_MS = 60_000;
-    private static final int THRESHOLD = 3;
+    private static final int THRESHOLD = 6;
 
     public static void recordSugarRushUse(Player player) {
         UUID id = player.getUUID();

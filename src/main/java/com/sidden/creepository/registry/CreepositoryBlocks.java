@@ -1,9 +1,6 @@
 package com.sidden.creepository.registry;
 
-import com.sidden.creepository.block.CameraBlock;
-import com.sidden.creepository.block.KegBlock;
-import com.sidden.creepository.block.PlantPotBock;
-import com.sidden.creepository.block.SculptureBlock;
+import com.sidden.creepository.block.*;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
@@ -20,6 +17,9 @@ public class CreepositoryBlocks {
 
    public static final DeferredBlock<Block> CHOCOLATE_BLOCK = registerBlock("chocolate_block",
           () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.PACKED_MUD)));
+
+    public static final DeferredBlock<Block> PUDDING = registerBlock("pudding",
+            ()-> new PuddingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE)));
 
     public static final DeferredBlock<Block> KEG = registerBlock("keg",
             () -> new KegBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BLOCK)));
