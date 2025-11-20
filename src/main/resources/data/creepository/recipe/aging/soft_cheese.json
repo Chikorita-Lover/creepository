@@ -1,0 +1,13 @@
+{
+  "type": "creepository:aging",
+  "ingredient": {
+    "item": "minecraft:milk_bucket"
+  },
+  "ager": {
+    "item": "minecraft:glow_lichen"
+  },
+  "result": {
+    "id": "creepository:soft_cheese",
+    "count": 1
+  }
+}

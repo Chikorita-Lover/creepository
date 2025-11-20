@@ -25,6 +25,10 @@ public class CreepositoryCreativeTabs {
                         output.accept(CreepositoryBlocks.CAMERA);
                         output.accept(CreepositoryBlocks.CHOCOLATE_BLOCK);
                         output.accept(CreepositoryItems.CHOCOLATE);
+                        output.accept(CreepositoryBlocks.SOFT_CHEESE);
+                        output.accept(CreepositoryItems.SOFT_CHEESE_SLICE);
+                        output.accept(CreepositoryBlocks.AGED_CHEESE);
+                        output.accept(CreepositoryItems.AGED_CHEESE_SLICE);
                         output.accept(CreepositoryBlocks.PUDDING);
                         output.accept(CreepositoryItems.CHOCOLATE_EGG);
                         output.accept(CreepositoryItems.CHOCKEN_SPAWN_EGG);

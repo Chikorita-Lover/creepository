@@ -18,6 +18,12 @@
   "block.creepository.sculpture": "Sculpture",
   "block.creepository.camera": "Camera",
 
+  "block.creepository.soft_cheese": "Soft Cheese",
+  "block.creepository.aged_cheese": "Cheese",
+
+  "item.creepository.soft_cheese_slice": "Soft Cheese Slice",
+  "item.creepository.aged_cheese_slice": "Cheese Slice",
+
   "block.creepository.keg": "Keg"
 
 }
