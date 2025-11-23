@@ -14,6 +14,6 @@ public class AgedCheeseBlock extends Block {
 
     @Override
     protected VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
-        return Block.box(1, 0, 1, 15, 5, 15);
+        return Block.box(0, 0, 0, 16, 8, 16);
     }
 }

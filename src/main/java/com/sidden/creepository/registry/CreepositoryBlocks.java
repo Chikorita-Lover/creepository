@@ -34,10 +34,10 @@ public class CreepositoryBlocks {
             ()-> new CameraBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_PLANKS)));
 
     public static final DeferredBlock<Block> SOFT_CHEESE = registerBlock("soft_cheese",
-            ()-> new SoftCheeseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE)));
+            ()-> new SoftCheeseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE).randomTicks()));
 
     public static final DeferredBlock<Block> AGED_CHEESE = registerBlock("aged_cheese",
-            ()-> new AgedCheeseBlock(BlockBehaviour.Properties.ofFullCopy(SOFT_CHEESE.get())));
+            ()-> new AgedCheeseBlock(BlockBehaviour.Properties.ofFullCopy(SOFT_CHEESE.get()).randomTicks()));
 
     private static Block stair(DeferredBlock<Block> baseBlock) {
         return new StairBlock(baseBlock.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(baseBlock.get()));
