@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/orientable",
   "textures": {
-    "front": "creepository:block/sculpture",
+    "front": "creepository:block/sculpture_face",
     "side": "creepository:block/sculpture_side",
     "top": "creepository:block/sculpture_top",
     "bottom": "creepository:block/sculpture_bottom",
