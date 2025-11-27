@@ -1,5 +1,6 @@
 package com.sidden.creepository.item;
 
+import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.Item;
@@ -20,7 +21,7 @@ public class AgedCheeseItem extends Item {
         if (!level.isClientSide) {
 
             for(MobEffectInstance effect : livingEntity.getActiveEffects()) {
-                if (1 == 1 && new Random().nextFloat(0, 5) == 0 ) {
+                if (effect.getEffect().value().getCategory() == MobEffectCategory.HARMFUL) {
                     livingEntity.removeEffect(effect.getEffect());
                 }
             }

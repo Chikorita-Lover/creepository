@@ -8,6 +8,8 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
+import java.util.Random;
+
 public class SoftCheeseSliceItem extends Item {
     public SoftCheeseSliceItem(Properties properties) {
         super(properties);
@@ -20,7 +22,7 @@ public class SoftCheeseSliceItem extends Item {
         if (!level.isClientSide) {
 
             for(MobEffectInstance effect : livingEntity.getActiveEffects()) {
-                if (1 == 1) {
+                if (effect.getEffect().value().getCategory() == MobEffectCategory.HARMFUL && new Random().nextFloat(0, 5) == 0 ) {
                     livingEntity.removeEffect(effect.getEffect());
                 }
             }
