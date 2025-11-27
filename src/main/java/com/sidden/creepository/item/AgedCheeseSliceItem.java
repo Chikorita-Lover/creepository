@@ -7,10 +7,8 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
-import java.util.Random;
-
-public class AgedCheeseItem extends Item {
-    public AgedCheeseItem(Properties properties) {
+public class AgedCheeseSliceItem extends Item {
+    public AgedCheeseSliceItem(Properties properties) {
         super(properties);
     }
 
