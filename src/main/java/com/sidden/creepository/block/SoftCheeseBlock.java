@@ -3,6 +3,8 @@ package com.sidden.creepository.block;
 import com.sidden.creepository.registry.CreepositoryBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
@@ -40,12 +42,14 @@ public class SoftCheeseBlock extends Block {
         if (stack.is(Items.HONEYCOMB) && !state.getValue(WAXED)) {
             level.setBlock(pos, state.setValue(WAXED, true), 2);
             player.getUseItem().shrink(1);
+            level.playSound((Player)null, pos, SoundEvents.HONEYCOMB_WAX_ON, SoundSource.BLOCKS, 1.0F, 1.0F);
 
             return  ItemInteractionResult.SUCCESS;
         }
 
         if (stack.is(ItemTags.AXES) && state.getValue(WAXED)) {
             level.setBlock(pos, state.setValue(WAXED, false), 2);
+            level.playSound((Player)null, pos, SoundEvents.AXE_WAX_OFF, SoundSource.BLOCKS, 1.0F, 1.0F);
 
             return  ItemInteractionResult.SUCCESS;
         }
@@ -58,8 +62,10 @@ public class SoftCheeseBlock extends Block {
 
         if (state.getValue(WAXED)) return;
 
-        if (random.nextInt(0, 9) == 0) {
+        if (random.nextInt(0, 15) == 0) {
             level.setBlock(pos, CreepositoryBlocks.AGED_CHEESE.get().defaultBlockState(), 2);
+            level.playSound((Player)null, pos, SoundEvents.BONE_MEAL_USE, SoundSource.BLOCKS, 1.0F, 1.0F);
+
         }
 
         super.randomTick(state, level, pos, random);

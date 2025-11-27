@@ -20,10 +20,10 @@ public class CreepositoryEffects {
     public static final Holder<MobEffect> SUGAR_RUSH = MOB_EFFECTS.register("sugar_rush",
             () -> new SugarRushEffect(MobEffectCategory.NEUTRAL, 0xffeadb)
                     .addAttributeModifier(Attributes.MOVEMENT_SPEED,
-                            ResourceLocation.fromNamespaceAndPath(Creepository.MOD_ID, "sugar_rush"), 0.5f,
+                            ResourceLocation.fromNamespaceAndPath(Creepository.MOD_ID, "sugar_rush"), 0.3f,
                             AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL)
                     .addAttributeModifier(Attributes.ATTACK_DAMAGE,
-                            ResourceLocation.fromNamespaceAndPath(Creepository.MOD_ID, "sugar_rush"), 0.5f,
+                            ResourceLocation.fromNamespaceAndPath(Creepository.MOD_ID, "sugar_rush"), 0.3f,
                             AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
 
     public static final Holder<MobEffect> SUGAR_CRAVE = MOB_EFFECTS.register("sugar_crave",
