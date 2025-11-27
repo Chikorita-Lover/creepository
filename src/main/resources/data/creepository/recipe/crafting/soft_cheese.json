@@ -1,14 +1,16 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "key": {
-    "#": {
-      "item": "creepository:soft_cheese_slice"
+  "ingredients": [
+    {
+      "item": "minecraft:milk_bucket"
+    },
+    {
+      "item": "minecraft:red_mushroom"
+    },
+    {
+      "item": "minecraft:brown_mushroom"
     }
-  },
-  "pattern": [
-    "##",
-    "##"
   ],
   "result": {
     "count": 1,
