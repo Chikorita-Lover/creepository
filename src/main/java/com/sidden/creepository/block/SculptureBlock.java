@@ -63,19 +63,16 @@ public class SculptureBlock extends HorizontalDirectionalBlock {
                 BlockState UpdatedState = state;
 
                 IntegerProperty intProp = FACE_PATTERNS.get(quad.getAsInt());
-                int UpdatedValue = state.getValue(intProp).intValue() == 0 ? 1 : 0;
+                int UpdatedValue = state.getValue(intProp).intValue() == 4 ? 0 : state.getValue(intProp).intValue()+1;
                 UpdatedState = UpdatedState.setValue(intProp, UpdatedValue);
 
                 Objects.requireNonNull(level).setBlock(pos, UpdatedState, 3);
-                player.displayClientMessage(Component.literal("applying " + UpdatedValue + " to " + FACE_PATTERNS.get(quad.getAsInt()).getName()), true);
-
                 level.gameEvent(GameEvent.BLOCK_CHANGE, pos, GameEvent.Context.of(UpdatedState));
-            } else {
-                player.displayClientMessage(Component.literal("pattern " + FACE_PATTERNS.get(quad.getAsInt()).getName() + " : " + state.getValue(FACE_PATTERNS.get(quad.getAsInt()))), true);
+                return ItemInteractionResult.SUCCESS;
 
             }
         }
-        return ItemInteractionResult.SUCCESS;
+        return ItemInteractionResult.FAIL;
     }
 
     /*
