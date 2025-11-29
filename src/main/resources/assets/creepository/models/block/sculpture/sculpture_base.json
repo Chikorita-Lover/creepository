@@ -1,0 +1,26 @@
+{
+  "textures": {
+    "down": "creepository:block/sculpture_bottom",
+    "east": "creepository:block/sculpture_side",
+    "north": "creepository:block/sculpture_face",
+    "particle": "creepository:block/sculpture_side",
+    "south": "creepository:block/sculpture_side",
+    "up": "creepository:block/sculpture_top",
+    "west": "creepository:block/sculpture_side"
+  },
+  "elements": [
+    {
+      "from": [0, 0, 0.01],
+      "to": [16, 16, 15.99],
+      "color": 2,
+      "faces": {
+        "north": {"uv": [0, 0, 16, 16], "texture": "#north"},
+        "east": {"uv": [0, 0, 16, 16], "texture": "#east"},
+        "south": {"uv": [0, 0, 16, 16], "texture": "#south"},
+        "west": {"uv": [0, 0, 16, 16], "texture": "#west"},
+        "up": {"uv": [0, 0, 16, 16], "texture": "#up"},
+        "down": {"uv": [0, 0, 16, 16], "texture": "#down"}
+      }
+    }
+  ]
+}

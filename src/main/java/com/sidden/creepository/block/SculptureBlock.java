@@ -34,11 +34,12 @@ import java.util.OptionalInt;
 public class SculptureBlock extends HorizontalDirectionalBlock {
     public static final DirectionProperty FACING;
 
+
     public static final List<IntegerProperty> FACE_PATTERNS = List.of(
-            IntegerProperty.create("carving_tr", 0, 1),
-            IntegerProperty.create("carving_tl", 0, 1),
-            IntegerProperty.create("carving_br", 0, 1),
-            IntegerProperty.create("carving_bl", 0, 1)
+            IntegerProperty.create("carving_tr", 0, 4),
+            IntegerProperty.create("carving_tl", 0, 4),
+            IntegerProperty.create("carving_br", 0, 4),
+            IntegerProperty.create("carving_bl", 0, 4)
     );
 
     public SculptureBlock(Properties properties) {

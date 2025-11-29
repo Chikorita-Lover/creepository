@@ -1,0 +1,6 @@
+{
+  "parent": "creepository:block/sculpture/template_sculpture_top_right",
+  "textures": {
+    "texture": "creepository:block/sculpture_scripture"
+  }
+}

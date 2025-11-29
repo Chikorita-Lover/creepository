@@ -1,0 +1,823 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "creepository:block/sculpture/sculpture_base",
+        "uvlock": true
+      },
+      "when": {
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_top_right_blank"
+      },
+      "when": {
+        "carving_tr": "0",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_top_right_face"
+      },
+      "when": {
+        "carving_tr": "1",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_top_right_holes"
+      },
+      "when": {
+        "carving_tr": "2",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_top_right_rune"
+      },
+      "when": {
+        "carving_tr": "3",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_top_right_scripture"
+      },
+      "when": {
+        "carving_tr": "4",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_top_left_blank"
+      },
+      "when": {
+        "carving_tl": "0",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_top_left_face"
+      },
+      "when": {
+        "carving_tl": "1",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_top_left_holes"
+      },
+      "when": {
+        "carving_tl": "2",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_top_left_rune"
+      },
+      "when": {
+        "carving_tl": "3",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_top_left_scripture"
+      },
+      "when": {
+        "carving_tl": "4",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_bottom_right_blank"
+      },
+      "when": {
+        "carving_br": "0",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_bottom_right_face"
+      },
+      "when": {
+        "carving_br": "1",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_bottom_right_holes"
+      },
+      "when": {
+        "carving_br": "2",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_bottom_right_rune"
+      },
+      "when": {
+        "carving_br": "3",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_bottom_right_scripture"
+      },
+      "when": {
+        "carving_br": "4",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_bottom_left_blank"
+      },
+      "when": {
+        "carving_bl": "0",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_bottom_left_face"
+      },
+      "when": {
+        "carving_bl": "1",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_bottom_left_holes"
+      },
+      "when": {
+        "carving_bl": "2",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_bottom_left_rune"
+      },
+      "when": {
+        "carving_bl": "3",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_bottom_left_scripture"
+      },
+      "when": {
+        "carving_bl": "4",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture/sculpture_base",
+        "uvlock": true,
+        "y": -180
+      },
+      "when": {
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_top_right_blank",
+        "y": -180
+      },
+      "when": {
+        "carving_tr": "0",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_top_right_face",
+        "y": -180
+      },
+      "when": {
+        "carving_tr": "1",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_top_right_holes",
+        "y": -180
+      },
+      "when": {
+        "carving_tr": "2",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_top_right_rune",
+        "y": -180
+      },
+      "when": {
+        "carving_tr": "3",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_top_right_scripture",
+        "y": -180
+      },
+      "when": {
+        "carving_tr": "4",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_top_left_blank",
+        "y": -180
+      },
+      "when": {
+        "carving_tl": "0",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_top_left_face",
+        "y": -180
+      },
+      "when": {
+        "carving_tl": "1",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_top_left_holes",
+        "y": -180
+      },
+      "when": {
+        "carving_tl": "2",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_top_left_rune",
+        "y": -180
+      },
+      "when": {
+        "carving_tl": "3",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_top_left_scripture",
+        "y": -180
+      },
+      "when": {
+        "carving_tl": "4",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_bottom_right_blank",
+        "y": -180
+      },
+      "when": {
+        "carving_br": "0",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_bottom_right_face",
+        "y": -180
+      },
+      "when": {
+        "carving_br": "1",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_bottom_right_holes",
+        "y": -180
+      },
+      "when": {
+        "carving_br": "2",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_bottom_right_rune",
+        "y": -180
+      },
+      "when": {
+        "carving_br": "3",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_bottom_right_scripture",
+        "y": -180
+      },
+      "when": {
+        "carving_br": "4",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_bottom_left_blank",
+        "y": -180
+      },
+      "when": {
+        "carving_bl": "0",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_bottom_left_face",
+        "y": -180
+      },
+      "when": {
+        "carving_bl": "1",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_bottom_left_holes",
+        "y": -180
+      },
+      "when": {
+        "carving_bl": "2",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_bottom_left_rune",
+        "y": -180
+      },
+      "when": {
+        "carving_bl": "3",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_bottom_left_scripture",
+        "y": -180
+      },
+      "when": {
+        "carving_bl": "4",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture/sculpture_base",
+        "uvlock": true,
+        "y": -90
+      },
+      "when": {
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_top_right_blank",
+        "y": -90
+      },
+      "when": {
+        "carving_tr": "0",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_top_right_face",
+        "y": -90
+      },
+      "when": {
+        "carving_tr": "1",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_top_right_holes",
+        "y": -90
+      },
+      "when": {
+        "carving_tr": "2",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_top_right_rune",
+        "y": -90
+      },
+      "when": {
+        "carving_tr": "3",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_top_right_scripture",
+        "y": -90
+      },
+      "when": {
+        "carving_tr": "4",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_top_left_blank",
+        "y": -90
+      },
+      "when": {
+        "carving_tl": "0",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_top_left_face",
+        "y": -90
+      },
+      "when": {
+        "carving_tl": "1",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_top_left_holes",
+        "y": -90
+      },
+      "when": {
+        "carving_tl": "2",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_top_left_rune",
+        "y": -90
+      },
+      "when": {
+        "carving_tl": "3",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_top_left_scripture",
+        "y": -90
+      },
+      "when": {
+        "carving_tl": "4",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_bottom_right_blank",
+        "y": -90
+      },
+      "when": {
+        "carving_br": "0",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_bottom_right_face",
+        "y": -90
+      },
+      "when": {
+        "carving_br": "1",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_bottom_right_holes",
+        "y": -90
+      },
+      "when": {
+        "carving_br": "2",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_bottom_right_rune",
+        "y": -90
+      },
+      "when": {
+        "carving_br": "3",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_bottom_right_scripture",
+        "y": -90
+      },
+      "when": {
+        "carving_br": "4",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_bottom_left_blank",
+        "y": -90
+      },
+      "when": {
+        "carving_bl": "0",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_bottom_left_face",
+        "y": -90
+      },
+      "when": {
+        "carving_bl": "1",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_bottom_left_holes",
+        "y": -90
+      },
+      "when": {
+        "carving_bl": "2",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_bottom_left_rune",
+        "y": -90
+      },
+      "when": {
+        "carving_bl": "3",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_bottom_left_scripture",
+        "y": -90
+      },
+      "when": {
+        "carving_bl": "4",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture/sculpture_base",
+        "uvlock": true,
+        "y": 90
+      },
+      "when": {
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_top_right_blank",
+        "y": 90
+      },
+      "when": {
+        "carving_tr": "0",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_top_right_face",
+        "y": 90
+      },
+      "when": {
+        "carving_tr": "1",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_top_right_holes",
+        "y": 90
+      },
+      "when": {
+        "carving_tr": "2",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_top_right_rune",
+        "y": 90
+      },
+      "when": {
+        "carving_tr": "3",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_top_right_scripture",
+        "y": 90
+      },
+      "when": {
+        "carving_tr": "4",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_top_left_blank",
+        "y": 90
+      },
+      "when": {
+        "carving_tl": "0",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_top_left_face",
+        "y": 90
+      },
+      "when": {
+        "carving_tl": "1",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_top_left_holes",
+        "y": 90
+      },
+      "when": {
+        "carving_tl": "2",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_top_left_rune",
+        "y": 90
+      },
+      "when": {
+        "carving_tl": "3",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_top_left_scripture",
+        "y": 90
+      },
+      "when": {
+        "carving_tl": "4",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_bottom_right_blank",
+        "y": 90
+      },
+      "when": {
+        "carving_br": "0",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_bottom_right_face",
+        "y": 90
+      },
+      "when": {
+        "carving_br": "1",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_bottom_right_holes",
+        "y": 90
+      },
+      "when": {
+        "carving_br": "2",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_bottom_right_rune",
+        "y": 90
+      },
+      "when": {
+        "carving_br": "3",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_bottom_right_scripture",
+        "y": 90
+      },
+      "when": {
+        "carving_br": "4",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_bottom_left_blank",
+        "y": 90
+      },
+      "when": {
+        "carving_bl": "0",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_bottom_left_face",
+        "y": 90
+      },
+      "when": {
+        "carving_bl": "1",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_bottom_left_holes",
+        "y": 90
+      },
+      "when": {
+        "carving_bl": "2",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_bottom_left_rune",
+        "y": 90
+      },
+      "when": {
+        "carving_bl": "3",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "creepository:block/sculpture_bottom_left_scripture",
+        "y": 90
+      },
+      "when": {
+        "carving_bl": "4",
+        "facing": "east"
+      }
+    }
+  ]
+}
