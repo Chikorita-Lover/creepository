@@ -24,11 +24,8 @@ public class DataGenerators {
         DataGenerator generator = event.getGenerator();
         PackOutput packOutput = generator.getPackOutput();
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
-        CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
-        //generator.addProvider(event.includeClient(), packOutput);
-        //generator.getVanillaPack(event.includeClient()).addProvider(::new);
-        //generator.addProvider(event.includeClient(), new CustomBlockStateProvider(packOutput, existingFileHelper));
+
         generator.addProvider(event.includeClient(), new CustomBlockStateProvider(packOutput, existingFileHelper));
 
     }
