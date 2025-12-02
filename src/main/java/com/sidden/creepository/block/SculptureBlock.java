@@ -1,6 +1,7 @@
 package com.sidden.creepository.block;
 
 import com.mojang.serialization.MapCodec;
+import com.sidden.creepository.datagen.SculptureDesign;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
@@ -33,13 +34,13 @@ import java.util.OptionalInt;
 
 public class SculptureBlock extends HorizontalDirectionalBlock {
     public static final DirectionProperty FACING;
-
+    public static final int MAXDESIGNS = SculptureDesign.totalDesigns();
 
     public static final List<IntegerProperty> FACE_PATTERNS = List.of(
-            IntegerProperty.create("carving_tr", 0, 4),
-            IntegerProperty.create("carving_tl", 0, 4),
-            IntegerProperty.create("carving_br", 0, 4),
-            IntegerProperty.create("carving_bl", 0, 4)
+            IntegerProperty.create("carving_tr", 0, MAXDESIGNS),
+            IntegerProperty.create("carving_tl", 0, MAXDESIGNS),
+            IntegerProperty.create("carving_br", 0, MAXDESIGNS),
+            IntegerProperty.create("carving_bl", 0, MAXDESIGNS)
     );
 
     public SculptureBlock(Properties properties) {

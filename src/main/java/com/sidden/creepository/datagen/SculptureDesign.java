@@ -5,11 +5,12 @@ import com.google.common.collect.ImmutableList;
 import java.util.List;
 
 public enum SculptureDesign {
-    NONE("blank", 0),
-    FACE("face", 1),
-    HOLE("holes", 2),
-    RUNE("rune", 3),
-    SCRIPTURE("scripture", 4);
+    FACE("face", 0),
+    HOLE("holes", 1),
+    RUNE("rune", 2),
+    SCRIPTURE("scripture", 3),
+    NONE("blank", 4);
+
 
     public String Name;
     public int Id;
@@ -29,7 +30,9 @@ public enum SculptureDesign {
 
         return list;
     }
-
+    public static int totalDesigns(){
+        return getDesigns().toArray().length == 0 ? 0: getDesigns().toArray().length - 1;
+    }
 
     public record Design(String name, int Id){}
 
