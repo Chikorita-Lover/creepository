@@ -5,6 +5,8 @@ import com.sidden.creepository.datagen.SculptureDesign;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -27,10 +29,7 @@ import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.phys.Vec3;
 import net.neoforged.neoforge.common.Tags;
 
-import java.util.List;
-import java.util.Objects;
-import java.util.Optional;
-import java.util.OptionalInt;
+import java.util.*;
 
 public class SculptureBlock extends HorizontalDirectionalBlock {
     public static final DirectionProperty FACING;
@@ -66,6 +65,8 @@ public class SculptureBlock extends HorizontalDirectionalBlock {
                 IntegerProperty intProp = FACE_PATTERNS.get(quad.getAsInt());
                 int UpdatedValue = state.getValue(intProp).intValue() == 4 ? 0 : state.getValue(intProp).intValue()+1;
                 UpdatedState = UpdatedState.setValue(intProp, UpdatedValue);
+
+                level.playSound((Player)null, pos, SoundEvents.STONE_HIT, SoundSource.BLOCKS, 1.0F, new Random().nextFloat(0.5f, 1.6f));
 
                 Objects.requireNonNull(level).setBlock(pos, UpdatedState, 3);
                 level.gameEvent(GameEvent.BLOCK_CHANGE, pos, GameEvent.Context.of(UpdatedState));

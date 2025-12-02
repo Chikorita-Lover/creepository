@@ -21,7 +21,6 @@ public class CreepositoryCreativeTabs {
 
                         output.accept(CreepositoryBlocks.SCULPTURE);
                         output.accept(CreepositoryBlocks.PLANT_POT);
-                        output.accept(CreepositoryBlocks.CAMERA);
                         output.accept(CreepositoryBlocks.CHOCOLATE_BLOCK);
                         output.accept(CreepositoryItems.CHOCOLATE);
                         output.accept(CreepositoryBlocks.SOFT_CHEESE);
