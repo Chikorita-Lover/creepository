@@ -1,4 +1,4 @@
-// 1.21.1	2025-11-30T02:28:42.747741823	Block States: creepository
+// 1.21.1	2025-12-02T20:21:58.260016005	Block States: creepository
 a79e25cc5e262db3a448cb51e242fa1cc45fca77 assets/creepository/blockstates/sculpture.json
 d5fa228f370ec8bf2ad78a3e99115507cfb0f274 assets/creepository/models/block/sculpture_bottom_left_blank.json
 621e7c30e9561f2a1b3a278b60f7634f0c35a2b2 assets/creepository/models/block/sculpture_bottom_left_face.json
@@ -20,4 +20,4 @@ b6b7ca5aaab1c1fbfb8d99463ab8c9fcd8453722 assets/creepository/models/block/sculpt
 fd61d393b5ae751a18e53eef2cab8cf7595dd043 assets/creepository/models/block/sculpture_top_right_holes.json
 908c05ee93269ea097fd09ac5b97bf37fda732b1 assets/creepository/models/block/sculpture_top_right_rune.json
 a451bf132249d73d230331d0ca49a34309f96f2a assets/creepository/models/block/sculpture_top_right_scripture.json
-5cc907a71a26811e140903dea4ac65a47cecdb3a assets/creepository/models/item/sculpture.json
+70ad04bfe1338c1d9ceca8da73335a2294d72859 assets/creepository/models/item/sculpture.json

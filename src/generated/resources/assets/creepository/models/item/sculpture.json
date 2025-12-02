@@ -1,6 +1,3 @@
 {
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "creepository:block/sculpture_face"
-  }
+  "parent": "creepository:block/sculpture/sculpture_base"
 }

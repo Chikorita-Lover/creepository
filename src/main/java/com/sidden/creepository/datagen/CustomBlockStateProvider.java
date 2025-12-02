@@ -3,6 +3,7 @@ package com.sidden.creepository.datagen;
 import com.sidden.creepository.Creepository;
 import com.sidden.creepository.block.SculptureBlock;
 import com.sidden.creepository.registry.CreepositoryBlocks;
+import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.core.Direction;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -73,7 +74,8 @@ public class CustomBlockStateProvider extends BlockStateProvider {
         }
 
         //inv
-        itemModels().cubeAll("sculpture", modLoc("block/sculpture_face"));
+        //itemModels().cubeAll("sculpture", modLoc("block/sculpture_face"));
+        itemModels().withExistingParent("sculpture", modLoc("block/sculpture/sculpture_base"));
     }
 
     private ModelFile[] GenerateModelArray(String quad, ModelFile.UncheckedModelFile template){
