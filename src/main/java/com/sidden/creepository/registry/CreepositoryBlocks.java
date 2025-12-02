@@ -18,7 +18,7 @@ public class CreepositoryBlocks {
    public static final DeferredBlock<Block> CHOCOLATE_BLOCK = registerBlock("chocolate_block",
           () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.PACKED_MUD)));
 
-    public static final DeferredBlock<Block> PUDDING = registerBlock("pudding",
+    public static final DeferredBlock<Block> PUDDING = registerPuddingBlock("pudding",
             ()-> new PuddingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE)));
 
     public static final DeferredBlock<Block> KEG = registerBlock("keg",
@@ -53,11 +53,20 @@ public class CreepositoryBlocks {
         return toReturn;
     }
 
+    private static <T extends Block> DeferredBlock<T> registerPuddingBlock(String name, Supplier<T> block) {
+        DeferredBlock<T> toReturn = BLOCKS.register(name, block);
+        registerPuddingBlockItem(name, toReturn);
+        return toReturn;
+    }
+
     private static <T extends Block> DeferredBlock<T> registerPureBlock(String name, Supplier<T> block) {
         return BLOCKS.register(name, block);
     }
     private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block) {
         CreepositoryItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+    }
+    private static <T extends Block> void registerPuddingBlockItem(String name, DeferredBlock<T> block) {
+        CreepositoryItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().stacksTo(16)));
     }
     public static void init(IEventBus eventBus) {
         BLOCKS.register(eventBus);

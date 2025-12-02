@@ -2,19 +2,20 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "B": {
+    "C": {
       "item": "creepository:chocolate"
     },
-    "C": {
+    "W": {
       "item": "minecraft:wheat"
     },
     "E": {
-      "tag": "c:eggs"
+      "tag": "minecraft:egg"
     }
   },
   "pattern": [
-    "BEB",
-    "CCC"
+    "CCC",
+    "CEC",
+    "WWW"
   ],
   "result": {
     "count": 1,

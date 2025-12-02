@@ -23,7 +23,7 @@ public class CreepositoryGameplayEvents {
             if (!stack.is(CreepositoryItemTags.CHOCOLATY) && stack.has(DataComponents.FOOD)) {
                 event.setCanceled(true);
                 player.displayClientMessage(
-                        Component.literal("You crave only chocolate right now..."),
+                        Component.literal("You crave only chocolaty foods right now..."),
                         true
                 );
             }

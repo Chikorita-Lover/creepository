@@ -17,7 +17,7 @@ public class CreepositoryItems {
             () -> new Item(new Item.Properties().food(CreepositoryFoods.CHOCOLATE)));
 
     public static final DeferredItem<Item> CHOCOLATE_EGG = ITEMS.register("chocolate_egg",
-            () -> new ChocolateEggItem(new Item.Properties()));
+            () -> new ChocolateEggItem(new Item.Properties().stacksTo(16)));
 
     public static final DeferredItem<Item> SOFT_CHEESE_SLICE = ITEMS.register("soft_cheese_slice",
             () -> new SoftCheeseSliceItem(new Item.Properties().food(CreepositoryFoods.SOFT_CHEESE_SLICE)));

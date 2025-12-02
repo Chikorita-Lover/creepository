@@ -9,7 +9,7 @@ import java.util.*;
 public class SugarRushTracker {
     private static final Map<UUID, List<Long>> rushTimes = new HashMap<>();
     private static final long ONE_MINUTE_MS = 60_000;
-    private static final int THRESHOLD = 6;
+    private static final int THRESHOLD = 5;
 
     public static void recordSugarRushUse(Player player) {
         UUID id = player.getUUID();
@@ -23,9 +23,7 @@ public class SugarRushTracker {
 
         times.removeIf(t -> now - t > ONE_MINUTE_MS);
 
-        System.out.println(times.size());
         if (times.size() >= THRESHOLD) {
-            System.out.println(times.size());
 
             giveSugarCrave(player);
             times.clear();
@@ -33,6 +31,6 @@ public class SugarRushTracker {
     }
 
     private static void giveSugarCrave(Player player) {
-        player.addEffect(new MobEffectInstance(CreepositoryEffects.SUGAR_CRAVE, 20 * 60));
+        player.addEffect(new MobEffectInstance(CreepositoryEffects.SUGAR_CRAVE, 20 * 60 * 5));
     }
 }

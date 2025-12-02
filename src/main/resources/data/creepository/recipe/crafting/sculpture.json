@@ -4,15 +4,12 @@
   "key": {
     "#": {
       "item": "minecraft:stone"
-    },
-    "X": {
-      "item": "minecraft:stone_slab"
     }
   },
   "pattern": [
-    "XX",
-    "##",
-    "##"
+    "###",
+    " # ",
+    "###"
   ],
   "result": {
     "count": 1,
