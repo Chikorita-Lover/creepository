@@ -15,7 +15,7 @@ public class CreepositoryCreativeTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Creepository.MOD_ID);
 
     public static final Supplier<CreativeModeTab> CREEPOSITORY = CREATIVE_MODE_TAB.register("creepository",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(Blocks.GRASS_BLOCK))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(CreepositoryItems.CHOCOLATE.get()))
                     .title(Component.translatable("creativetab.creepository.creepository"))
                     .displayItems((itemDisplayParameters, output) -> {
 
