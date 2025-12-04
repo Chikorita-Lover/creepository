@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "creepository:chocolate"
+    },
+    {
+      "item": "creepository:chocolate"
+    },
+    {
+      "item": "creepository:chocolate"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "item": "minecraft:milk_bucket"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "creepository:chocolate_milk"
+  }
+}

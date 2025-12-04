@@ -39,6 +39,9 @@ public class CreepositoryBlocks {
     public static final DeferredBlock<Block> AGED_CHEESE = registerBlock("aged_cheese",
             ()-> new AgedCheeseBlock(BlockBehaviour.Properties.ofFullCopy(SOFT_CHEESE.get()).randomTicks()));
 
+    public static final DeferredBlock<Block> TOMATO_BUSH = registerBlock("tomato_bush",
+            () -> new TomatoBushBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SWEET_BERRY_BUSH)));
+
     private static Block stair(DeferredBlock<Block> baseBlock) {
         return new StairBlock(baseBlock.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(baseBlock.get()));
     }

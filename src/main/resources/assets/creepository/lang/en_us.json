@@ -12,6 +12,7 @@
   "effect.creepository.sugar_crave": "Sugar Crave",
 
   "block.creepository.pudding": "Pudding",
+  "item.creepository.chocolate_milk": "Chocolate Milk",
 
 
   "block.creepository.plant_pot": "Plant Pot",
@@ -21,8 +22,16 @@
   "block.creepository.soft_cheese": "Soft Cheese",
   "block.creepository.aged_cheese": "Cheese",
 
+  "block.creepository.tomato_bush": "Tomato Bush",
+
+
   "item.creepository.soft_cheese_slice": "Soft Cheese Slice",
   "item.creepository.aged_cheese_slice": "Cheese Slice",
+
+  "item.creepository.tomato": "Tomato",
+  "item.creepository.tomato_seeds": "Tomato Seeds",
+  "item.creepository.hamburger": "Hamburger",
+
 
   "block.creepository.keg": "Keg"
 

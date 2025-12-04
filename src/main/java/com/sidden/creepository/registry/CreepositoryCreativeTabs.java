@@ -22,13 +22,17 @@ public class CreepositoryCreativeTabs {
                         output.accept(CreepositoryBlocks.SCULPTURE);
                         output.accept(CreepositoryBlocks.PLANT_POT);
                         output.accept(CreepositoryBlocks.CHOCOLATE_BLOCK);
+                        output.accept(CreepositoryItems.TOMATO);
                         output.accept(CreepositoryItems.CHOCOLATE);
                         output.accept(CreepositoryBlocks.SOFT_CHEESE);
                         output.accept(CreepositoryItems.SOFT_CHEESE_SLICE);
                         output.accept(CreepositoryBlocks.AGED_CHEESE);
                         output.accept(CreepositoryItems.AGED_CHEESE_SLICE);
+                        output.accept(CreepositoryItems.HAMBURGER);
                         output.accept(CreepositoryBlocks.PUDDING);
+                        output.accept(CreepositoryItems.CHOCOLATE_MILK);
                         output.accept(CreepositoryItems.CHOCOLATE_EGG);
+                        output.accept(CreepositoryItems.TOMATO_SEEDS);
                         output.accept(CreepositoryItems.CHOCKEN_SPAWN_EGG);
 
                     }).build());

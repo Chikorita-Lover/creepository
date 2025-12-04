@@ -7,8 +7,8 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
-public class AgedCheeseSliceItem extends Item {
-    public AgedCheeseSliceItem(Properties properties) {
+public class CheesyItem extends Item {
+    public CheesyItem(Properties properties) {
         super(properties);
     }
 

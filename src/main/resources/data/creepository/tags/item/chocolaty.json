@@ -1,7 +1,8 @@
 {
   "replace": false,
   "values": [
-    "creepository:chocolate"
+    "creepository:chocolate",
+    "creepository:chocolate_milk"
 
   ]
 }

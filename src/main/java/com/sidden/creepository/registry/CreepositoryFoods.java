@@ -8,5 +8,8 @@ public class CreepositoryFoods {
     public static FoodProperties CHOCOLATE = new FoodProperties.Builder().nutrition(3).saturationModifier(0.1f).fast().effect(() -> new MobEffectInstance(CreepositoryEffects.SUGAR_RUSH, 1200, 0), 1F).build();
     public static FoodProperties SOFT_CHEESE_SLICE = new FoodProperties.Builder().nutrition(2).saturationModifier(0.2f).alwaysEdible().build();
     public static FoodProperties AGED_CHEESE_SLICE = new FoodProperties.Builder().nutrition(5).saturationModifier(0.5f).alwaysEdible().build();
+    public static FoodProperties TOMATO = new FoodProperties.Builder().nutrition(2).saturationModifier(0.1f).build();
+    public static FoodProperties HAMBURGER = new FoodProperties.Builder().nutrition(10).saturationModifier(0.9f).alwaysEdible().build();
+    public static FoodProperties CHOCOLATE_MILK = new FoodProperties.Builder().nutrition(5).saturationModifier(0.1f).fast().effect(() -> new MobEffectInstance(CreepositoryEffects.SUGAR_RUSH, 1200, 0), 1F).build();
 
 }
