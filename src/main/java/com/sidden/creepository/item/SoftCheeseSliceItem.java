@@ -22,7 +22,7 @@ public class SoftCheeseSliceItem extends Item {
         if (!level.isClientSide) {
 
             for(MobEffectInstance effect : livingEntity.getActiveEffects()) {
-                if (effect.getEffect().value().getCategory() == MobEffectCategory.HARMFUL && new Random().nextFloat(0, 5) == 0 ) {
+                if (effect.getEffect().value().getCategory() == MobEffectCategory.HARMFUL && livingEntity.getRandom().nextInt(5) == 0 ) {
                     livingEntity.removeEffect(effect.getEffect());
                 }
             }
