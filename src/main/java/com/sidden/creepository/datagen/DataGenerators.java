@@ -25,8 +25,7 @@ public class DataGenerators {
         PackOutput packOutput = generator.getPackOutput();
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
 
-
         generator.addProvider(event.includeClient(), new CustomBlockStateProvider(packOutput, existingFileHelper));
-
+        generator.addProvider(event.includeServer(), new CustomRecipeProvider(packOutput, event.getLookupProvider()));
     }
 }

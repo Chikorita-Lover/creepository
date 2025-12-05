@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_chocolate": {
+    "has_aged_cheese_slice": {
       "conditions": {
         "items": [
           {
-            "items": "creepository:chocolate"
+            "items": "creepository:aged_cheese_slice"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "creepository:chocolate_block"
+        "recipe": "creepository:crafting/aged_cheese"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_chocolate"
+      "has_aged_cheese_slice"
     ]
   ],
   "rewards": {
     "recipes": [
-      "creepository:coal_block"
+      "creepository:crafting/aged_cheese"
     ]
   }
 }

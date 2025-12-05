@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
+  "group": "soft_cheese",
   "ingredients": [
     {
       "item": "minecraft:milk_bucket"

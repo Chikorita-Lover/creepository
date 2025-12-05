@@ -5,11 +5,11 @@
     "C": {
       "item": "creepository:chocolate"
     },
+    "E": {
+      "item": "minecraft:egg"
+    },
     "W": {
       "item": "minecraft:wheat"
-    },
-    "E": {
-      "tag": "minecraft:egg"
     }
   },
   "pattern": [
