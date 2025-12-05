@@ -9,7 +9,9 @@ public enum SculptureDesign {
     HOLE("holes", 1),
     RUNE("rune", 2),
     SCRIPTURE("scripture", 3),
-    NONE("blank", 4);
+    MARK("mark", 4),
+    EYES("eyes", 5),
+    NONE("blank", 6);
 
 
     public String Name;
@@ -26,7 +28,7 @@ public enum SculptureDesign {
 
     public static List<SculptureDesign> getDesigns() {
         List list;
-        list = ImmutableList.of(NONE, FACE, HOLE, RUNE, SCRIPTURE);
+        list = ImmutableList.of(NONE, FACE, HOLE, RUNE,SCRIPTURE, MARK, EYES);
 
         return list;
     }

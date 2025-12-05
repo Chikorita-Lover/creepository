@@ -11,6 +11,7 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.ItemInteractionResult;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -63,8 +64,9 @@ public class SculptureBlock extends HorizontalDirectionalBlock {
                 BlockState UpdatedState = state;
 
                 IntegerProperty intProp = FACE_PATTERNS.get(quad.getAsInt());
-                int UpdatedValue = state.getValue(intProp).intValue() == 4 ? 0 : state.getValue(intProp).intValue()+1;
+                int UpdatedValue = state.getValue(intProp).intValue() == SculptureDesign.totalDesigns()? 0 : state.getValue(intProp).intValue()+1;
                 UpdatedState = UpdatedState.setValue(intProp, UpdatedValue);
+                stack.hurtAndBreak(1, player, LivingEntity.getSlotForHand(hand));
 
                 level.playSound((Player)null, pos, SoundEvents.STONE_HIT, SoundSource.BLOCKS, 1.0F, new Random().nextFloat(0.5f, 1.6f));
 
