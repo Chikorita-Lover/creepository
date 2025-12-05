@@ -1,32 +1,32 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_the_recipe": {
-      "conditions": {
-        "recipe": "creepository:pudding"
-      },
-      "trigger": "minecraft:recipe_unlocked"
-    },
-    "has_chocolate": {
+    "has_milk_bucket": {
       "conditions": {
         "items": [
           {
-            "items": "creepository:chocolate"
+            "items": "minecraft:milk_bucket"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "creepository:crafting/soft_cheese"
+      },
+      "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
       "has_the_recipe",
-      "has_chocolate"
+      "has_milk_bucket"
     ]
   ],
   "rewards": {
     "recipes": [
-      "creepository:pudding"
+      "creepository:crafting/soft_cheese"
     ]
   }
 }

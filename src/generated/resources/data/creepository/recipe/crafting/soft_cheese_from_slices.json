@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
+  "group": "soft_cheese",
   "key": {
     "#": {
       "item": "creepository:soft_cheese_slice"

@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stone": {
+    "has_chocolate": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:stone"
+            "items": "creepository:chocolate"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "creepository:sculpture"
+        "recipe": "creepository:crafting/chocolate_block"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_stone"
+      "has_chocolate"
     ]
   ],
   "rewards": {
     "recipes": [
-      "creepository:sculpture"
+      "creepository:crafting/chocolate_block"
     ]
   }
 }
